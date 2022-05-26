@@ -17,7 +17,7 @@ jobs:
         cache: gradle
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew :test-app-maven-central:build
       working-directory: ./android
 
     - name: Upload apks
